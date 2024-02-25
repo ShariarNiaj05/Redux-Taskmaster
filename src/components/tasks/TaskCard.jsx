@@ -2,10 +2,10 @@ import { ArrowRightIcon, TrashIcon } from '@heroicons/react/24/outline';
 import { useDispatch } from 'react-redux';
 import { removeTask } from '../../redux/features/tasks/tasksSlice';
 
-const TaskCard = () => {
+const TaskCard = ({task}) => {
 
   const dispatch = useDispatch()
-  const task = {
+/*   const task = {
     id: 1,
     status: 'pending',
     title: 'Remove Button',
@@ -14,7 +14,7 @@ const TaskCard = () => {
     date: '2023-08-28',
     assignedTo: 'Mir Hussain',
     priority: 'high',
-  };
+  }; */
 
   return (
     <div className="bg-secondary/10 rounded-md p-5">
